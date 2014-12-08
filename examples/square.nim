@@ -12,7 +12,7 @@ method key_down(self: ref WindowScene, key: TKey, mods: TMod) =
     else: discard
 
 method draw(self: ref WindowScene) =
-  self.ctl.display.surface.fillRect((50, 50, 100, 100), colFuchsia)
+  self.ctl.display.fillRect((50, 50, 100, 100), colFuchsia)
 
 var window_scene = new(WindowScene)
 var window_app = new(App)

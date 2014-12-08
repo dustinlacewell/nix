@@ -1,11 +1,12 @@
+import graphics
 
 from src/display import Display
 
 type Controller* = object
-  display*: ref Display
+  display*: graphics.PSurface
   should_close: bool
 
-proc newController*(display: ref Display): ref Controller =
+proc newController*(display: graphics.PSurface): ref Controller =
   result = new(Controller)
   result.display = display
   result.should_close = false
