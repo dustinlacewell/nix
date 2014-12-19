@@ -11,13 +11,13 @@ type
     ctl*: ref Controller
     scene*: ref Scene
 
-method enter*(self: ref Scene) = 
+method enter*(self: ref Scene) =
   discard
 
-method leave*(self: ref Scene) = 
+method leave*(self: ref Scene) =
   discard
 
-method key_down*(self: ref Scene, key: TKey, mods: TMod) = 
+method key_down*(self: ref Scene, key: TKey, mods: TMod) =
   discard
 
 method mouse_down*(self: ref Scene, event: PMouseButtonEvent) =
@@ -26,10 +26,10 @@ method mouse_down*(self: ref Scene, event: PMouseButtonEvent) =
 method mouse_motion*(self: ref Scene, event: PMouseMotionEvent) =
   discard
 
-method update*(self: ref Scene) = 
+method update*(self: ref Scene, t, dt: int) =
   discard
 
-method draw*(self: ref Scene) = 
+method draw*(self: ref Scene) =
   discard
 
 method set_scene*(self: ref SceneManager, scene: ref Scene) =
